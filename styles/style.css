@@ -1,13 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Roboto:wght@100;400&display=swap');
 
 * {
-    /* border: 1px solid black; */
+    border: 1px solid black;
     margin: 0;
-    /* font-family: 'Mooli', sans-serif; */
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-size: 16px;
+}
+
+:root {
+    --header: #573544;
+    --color-fonts-one: #F2EBBF;
+    --color-fonts-two: #573544;
+    --buttons: #E8476D;
+    --background-one: #449991;
+    --background-two: #8CBEB2;
+    --h1: 3rem;
+    --h2: 2rem;
+    --h3: 1.5rem;
 }
 
 body {
@@ -24,27 +36,60 @@ main {
     margin: 2rem 0;
 }
 
+header {
+    background-color: var(--header);
+    color: var(--color-fonts-one);
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 14px 31px -16px rgba(116, 116, 116, 0.58);
+    -webkit-box-shadow: 2px 14px 31px -16px rgba(116, 116, 116, 0.58);
+    -moz-box-shadow: 2px 14px 31px -16px rgba(116, 116, 116, 0.58);
+    z-index: 100;
+}
+
+.header-container {
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-family: 'Mooli', sans-serif;
+    font-size: var(--h2);
+}
+
+#ul-header {
+    width: 30vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+#ul-header li a {
+    font-size: 1.5rem;
+    color: var(--color-fonts-one);
+}
+
+#ul-header li a:hover {
+    color: var(--buttons);
+}
+
 img {
     max-width: 20vw;
 }
 
-ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-around;
-    padding: 0;
-}
-
-nav {
+/* nav {
     padding: 1.5rem;
-    background-color: #3efe57;
     color: #00053d;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     gap: 1rem;
-}
+} */
 
 .container {
     display: flex;
